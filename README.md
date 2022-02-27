@@ -1,2 +1,3 @@
-# CountingWise
-Counting Wise Website
+# countingwise-website
+
+Check out my first freelancing project

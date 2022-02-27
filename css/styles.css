@@ -1,0 +1,682 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.paragraphs{
+  line-height: 1.5;
+  font-weight: 300;
+  color:#404040;
+  font-size:1.3rem;
+}
+
+.heading{
+  color:#004c8f ;
+}
+
+.heading-light{
+  font-weight: 300;
+}
+.heading-bold{
+  font-weight: 800;
+}
+
+
+
+
+
+/* ----------------preloader----------------- */
+
+svg {
+  display:block;
+  width:258px;
+  height:258px;
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background-color: #fff;
+
+}
+.tree {
+  fill:#ed232a;
+}
+
+.circle-mask {
+  transform-origin: 50% 90%;
+  -webkit-animation: scale 5s infinite ease-out;
+          animation: scale 5s infinite ease-out;
+}
+
+@-webkit-keyframes scale {
+  0%, 100% {
+    transform: scale(0.0);
+  }
+  7%, 90% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(0.0);
+  }
+  7%, 90% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+
+.loader-wrapper{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ----------------landing-page-------------- */
+
+#landing-page{
+  padding:3% 5% 0 5%;
+}
+
+/* navbar */
+
+.navbar{
+  padding:1% 0 0 0;
+  background-color: #fff;
+  margin-bottom: 2%;
+}
+
+.logo{
+  width:70px;
+  height:70px;
+}
+
+.nav-item{
+  padding:0 25px;
+  text-align:center;
+}
+
+#home-link{
+  color:#004c8f;
+  text-decoration: underline;
+}
+
+.nav-link{
+  font-weight: 700;
+  font-size:1.2rem;
+  color:#004c8f;
+}
+
+#home-link:hover{
+  color:#ed232a;
+}
+
+.nav-link:hover{
+  color:#004c8f ;
+}
+
+/* navbar ends */
+
+.homepage-content{
+padding-top:50px;
+}
+
+.homepage-text{
+  text-align: left;
+  padding-top:5%;
+}
+
+#landing-page .heading{
+  font-size:3vw;
+}
+
+#landing-page .paragraphs{
+  width:75%;
+  font-size:1.5vw;
+}
+
+.homepage-button{
+  border-radius:20px;
+  color:#fff;
+}
+
+.btn{
+  background-color:#004c8f;
+}
+
+.homepage-image{
+  margin:auto;
+}
+
+.tagline{
+  color:#ed232a;
+}
+
+/* ------------------about us------------- */
+
+#about-us{
+  text-align: left;
+  padding: 5% 7% 3% 7%;
+  background-color:#f9f9f9;
+}
+
+#about-us .heading{
+  margin-bottom: 20px;
+}
+
+
+.heading-after::after{
+  content: "";
+  display: block;
+  width: 105px;
+  height: 2px;
+  background:#ed232a;
+  display:inline-block;
+  margin:5px 5px;
+
+}
+
+
+#about-us .paragraphs{
+  line-height:1.5;
+}
+
+/* --------------------services----------------- */
+
+#services{
+  margin:3% 0 3% 0;
+  padding: 5% 7% 3% 7%;
+}
+
+#services .heading-bold{
+text-decoration: underline;
+text-decoration-color:#ed232a;
+
+}
+
+#services .heading{
+  margin-bottom: 50px;
+}
+
+.services-row{
+  max-width:700px;
+  margin:0 auto 0 auto;
+}
+
+.service-card{
+  border-radius: 20px 0 20px 0;
+  margin-bottom: 20px;
+  border: 1px solid #004c8f ;
+  box-shadow: 10px 10px #ccc;
+  transition: transform .2s;
+}
+
+.service-card:hover{
+  transform: scale(0.75);
+}
+
+.service-icon{
+  color:#004c8f ;
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  text-align:center;
+}
+.service-title{
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color:#ed232a;
+  text-decoration-thickness:2.5px;
+
+}
+
+.service-text{
+ font-size:0.75rem;
+ line-height:1.5;
+ width:100%;
+ text-align: center;
+}
+/* --------------counter--------------- */
+
+#counter{
+  padding:3% 7% 3% 7%;
+}
+
+.counter {
+    background-color:#fff;
+    padding:15px 0 3px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.count-title {
+    font-size:1.5rem;
+    margin-top: 2px;
+    text-align: center;
+    color:#004c8f ;
+    font-weight: 900;
+}
+
+.count-text {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
+#counter .underline::after{
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 25%; /* Change this to whatever width you want. */
+    border-bottom: 3px solid #ed232a; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.counter-row{
+  max-width:1000px;
+  margin:auto;
+}
+
+/* -------------product-portfolio-------- */
+
+#products{
+  padding:6% 2% 3% 2%;
+}
+
+#products .heading-bold{
+  text-decoration: underline;
+  text-decoration-color:#ed232a;
+  margin-bottom: 65px;
+
+}
+
+.products-row{
+  max-width: 900px;
+  margin:0 auto;
+}
+
+.icon-size{
+  padding-top: 40px;
+  font-size: 100px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color:white;
+  border: 1px solid #f1f1f1;
+  width:180px;
+  height:180px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+  margin:5px auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #fff;
+}
+
+/* Style the back side */
+.flip-card-back {
+  padding:5px;
+  transform: rotateY(180deg);
+}
+
+
+.products-icon1{
+  color: lightgreen;
+}
+.products-icon2{
+  color:lightpink;
+}
+.products-icon3{
+  color:lightblue;
+}
+.products-icon4{
+  color:grey;
+}
+.products-icon8{
+  color: lightgreen;
+}
+.products-icon7{
+  color:lightpink;
+}
+.products-icon6{
+  color:lightblue;
+}
+.products-icon5{
+  color:grey;
+}
+
+.products-title{
+  padding-top: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color:#98dc35;
+  text-decoration-thickness:2.5px;
+}
+
+.product-text{
+  font-weight: 300;
+}
+/* --------------FAQ's------------------- */
+
+#faq{
+  margin-top:50px;
+  padding:5% 0 3% 0;
+  background-color:#f9f9f9;
+}
+
+.faq-icon{
+  font-weight:400;
+  color:#ed232a;
+}
+
+#faq .heading{
+  font-weight:700;
+  margin-bottom: 30px;
+}
+
+.faq-container{
+  margin-left:20%;
+}
+
+.faq{
+  font-weight:300;
+}
+
+#faq ul{
+  text-align: left;
+}
+
+.faq-item{
+  padding:15px 0 15px 0;
+}
+
+#faq .underline::after{
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display:block; /* This will put the pseudo element on its own line. */
+    margin:0 2%;
+    width:75%;  /* Change this to whatever width you want. */
+    border-bottom: 1px solid #ed232a; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.faq-link{
+  color:#404040;
+  font-weight:300;
+  text-align: left;
+}
+
+.faq-link:hover{
+  color:#ed232a;
+}
+
+.faq-answer{
+  width:75%;
+  padding:15px 0 15px 0;
+}
+
+/* ----------------testimonials-------------- */
+
+#testimonials{
+  padding:5% 0 5% 0;
+}
+
+#testimonials .heading-bold{
+  text-decoration: underline;
+  text-decoration-color:#ed232a;
+}
+
+#testimonials .heading{
+  margin-bottom: 50px;
+}
+
+.testimonial-img{
+  width:10%;
+  display:block;
+  margin:0 auto 10px auto;
+
+}
+
+.rating{
+  color:#e1ad01;
+
+}
+
+.carousel-item {
+  padding:3% 20% 3% 20%;
+}
+
+.carousel-arrow {
+  color:#000;
+  display:flex;
+  margin-top: 100px;
+}
+
+.carousel-arrow:hover{
+  color:#ed232a;
+}
+
+/* contact-us */
+
+#contact-us{
+  padding:2% 10% 5% 10%;
+}
+
+#contact-us .heading{
+  margin-bottom: 60px;
+}
+
+#contact-us .heading-bold{
+  text-decoration: underline;
+  text-decoration-color:#ed232a;
+}
+
+.contact-info{
+  text-align: center;
+}
+
+.info-box{
+  background-color: #f9f9f9;
+}
+
+.contact-form{
+   background-color: #f9f9f9;
+   padding:30px;
+}
+
+.location-icon{
+  color:#ed232a;
+  font-size:25px;
+}
+
+.call-icon{
+  color:#339900;
+  font-size:25px;
+}
+
+.email-icon{
+  color:#FF9900;
+  font-size:25px;
+}
+
+.clock-icon{
+  color:#33CC33 ;
+  font-size:25px;
+}
+
+.card-body{
+  text-align: left;
+}
+
+.message-box{
+  width:100%;
+}
+
+.info-text{
+  margin-bottom: 0;
+  font-size: 0.75rem;
+}
+
+.form-button{
+  background-color:#ed232a;
+  border-radius:20px;
+  padding:5px 20px;
+  color: #fff;
+}
+
+/* ----------footer------------- */
+
+#footer{
+  margin-top:3%;
+}
+.footer{
+  background-color:#f9f9f9;
+  padding-top: 10px;
+}
+
+#footer .heading{
+  margin-bottom: 30px;
+}
+
+#footer .underline::after{
+  width: 60px;
+  margin:3px;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  border-bottom: 2px solid #ed232a; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#footer a{
+  color:#404040;
+}
+
+#footer a:hover{
+  color:#ed232a;
+}
+
+#footer .location-icon, #footer .call-icon, #footer .email-icon, #footer .clock-icon{
+  font-size: 1rem;
+}
+
+.footer-text{
+  font-weight: 300;
+
+}
+
+/* ---------------media queries--------------*/
+
+
+@media only screen and (max-width:1090px){
+
+body{
+  overflow-x: hidden;
+}
+/* ---------landing page--------- */
+
+.navbar{
+overflow-x:hidden;
+}
+
+.homepage-text{
+margin-bottom: 20px;
+}
+#landing-page .heading{
+  font-size: 3.3rem;
+  margin-bottom: 10px;
+}
+#landing-page .heading-bold{
+  margin-bottom:30px;
+}
+#landing-page .paragraphs{
+  font-size: 1.3rem;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+/* ----------counter-------- */
+
+#counter{
+  padding:0;
+}
+.counter{
+  margin:20px;
+}
+/* ----------contact-us----------- */
+
+#contact-us{
+  padding:3% 2%;
+}
+.info-box{
+  margin:15px;
+}
+/* --------------products------------ */
+
+
+/* --------------faq----------- */
+
+#faq .container{
+  margin:0 12%;
+}
+
+
+/* ------------footer-------------- */
+#footer .underline::after{
+  display:none;
+}
+
+#landingpage, #about-us, #services, #counter, #products, #faq, #testimonilas, #contact-us, #footer{
+  overflow-x:hidden;
+
+}
+
+
+}
